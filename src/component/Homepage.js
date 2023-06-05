@@ -31,7 +31,7 @@ export default function Homepage(props) {
 
 
         <div className='home-image' >
-          <img src="/all_images/main-img.png" width={340} height={450} />
+          <img src="https://github.com/Ayushkumawat/Facial-Recognition-with-Gender-Detection/assets/76219349/0964e6d3-407a-485f-b20f-bbcfe30a4776" width={340} height={450} />
         </div>
       </div>
 
