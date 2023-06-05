@@ -8,7 +8,7 @@ export default function Homepage(props) {
       <div className='home-outer-container' id="cont3">
         <div className='home-inner-container' id="cont1">
           <div className='content-main'>
-            <h3 style={{color:props.switch_modes==="dark"?"":"#484747"}}><b>Hello, it's Me</b></h3>
+            <h3 style={{color:props.switch_modes==="dark"?"":"#484747"}}></h3>
             <h1 style={{color:props.switch_modes==="dark"?"":"#484747"}}><b>Abhishek Jain</b></h1>
             <h3 id="my-skill-list" style={{color:props.switch_modes==="dark"?"":"#484747"}}><b>And I'm a <span id="types"><Typed strings={["Student", "Python Developer", "Quick lerner"]} typeSpeed={80} backSpeed={80} loop /></span></b></h3>
             <p style={{color:props.switch_modes==="dark"?"":"#484747"}}>This is my portfolio Developer by me using React, Javascript,
