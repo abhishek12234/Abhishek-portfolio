@@ -1,0 +1,269 @@
+
+#types{
+    color: #07e4f4; 
+   
+
+}
+
+#my-skill-list{
+  padding-bottom: 10px;
+}
+
+
+  
+.home-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cont3{
+    display:flex;
+    width: 80%;
+    height: fit-content;
+    
+    flex-wrap: wrap-reverse;
+    margin: auto;
+    border-radius: 20px;
+    justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  
+  }
+
+
+#cont1{
+    display: flex;
+    flex-direction: column;
+    width: 630px;
+    height: fit-content;
+    align-items: flex-start;
+    justify-content: space-between;
+  color: white;
+  margin-right: 45px;
+
+  
+  
+  
+  
+}
+#my-skill-list span Typed{
+  transition: 1s ease;
+}
+
+.home-image img{
+   display: flex;
+  justify-content: center;
+  
+  align-items: center;
+  margin-right: 30px;
+    
+    opacity: 0;
+    animation: zoomIn1 1s ease forwards,floatImage 4s ease-in-out infinite;
+    animation-delay: 1s,2s;
+    transition: 0.5s ease-in-out;
+    
+} 
+
+
+.logos{
+    
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+   
+    padding-bottom:30px ;
+
+
+}
+.content-main{
+  display: flex;
+  flex-direction: column;
+  
+  
+    padding-bottom:5px ;
+    
+    
+}
+.content-main h3{
+    font-size: 31px;
+    font-weight: 500;
+    
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    
+}
+.content-main h1{
+    font-size: 46px;
+    font-weight: 500;
+    
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+
+    
+    
+    
+}
+
+.content-main h3:nth-of-type(2){
+    animation: slideTop 1s ease forwards;
+
+}
+.content-main p{
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+.logos a{
+  
+    display: inline-flex;
+    justify-content: center;
+
+    align-items: center;
+    margin: 5px;
+    width: 33px;
+    height: 33px;
+    background:transparent ;
+    border: 2px solid #07e4f4;
+    border-radius: 50%;
+    font-size: 20px;
+    color:#04edfe;
+    background: var(--modeback);
+    text-decoration: none;
+    transition:0.5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.1s*var(--i));
+   
+}
+
+.logos a:hover{
+    background:#04edfe;
+    color: #1f242d;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:12px 28px;
+    background: #0ef;
+    height: 35px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px var(--shadow);
+    font-size: 15px;
+    color:#1f242d;
+    
+    text-decoration: none;
+    transition: 0.4s ease;
+    
+}
+#button1{
+  margin-top: 5px;
+  opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay:1s;
+}
+@keyframes slideTop{
+    0%{
+      transform: translateY(130px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+   }
+@keyframes slideBottom{
+    0%{
+      transform: translateY(-130px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+   }
+ @keyframes slideRight {
+    0%{
+      transform: translateX(-140px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+    
+   }
+   @keyframes slideLeft {
+    0%{
+      transform: translateX(140px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+    
+   }
+   @keyframes zoomIn {
+    0%{
+      transform:scaleX(-1);
+      opacity: 0;
+    }
+    100%{
+      transform: scaleX(1);
+      opacity: 1;
+    }
+    
+   }
+   @keyframes floatImage{
+    
+    0%{
+     
+      transform: translateY(0);
+      
+      
+    }
+    50%{
+        
+        transform: translateY(-24px);
+        
+        
+      }
+    100%{
+        
+      transform: translateY(0);
+      
+      
+    }
+  
+   }
+
+   @media(max-width:992px){
+    .logos{
+      padding-bottom:20px
+    }
+    .home-image img{
+      width: 95%;
+      height: 365px;
+    }
+    .content-main h1{
+      font-size: 35px;
+    }
+    .content-main h3{
+      font-size: 22px;
+    }
+    .content-main{
+      width: 100%;
+    }
+    #cont1{
+      width: 100%;
+      margin: 0px;
+
+    }
+    .btn{
+      margin-bottom: 100px;
+    }
+    }

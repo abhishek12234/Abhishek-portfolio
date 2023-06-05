@@ -1,0 +1,259 @@
+input{
+   box-shadow: 0 0 5px black;
+}
+.contact-outer_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    margin-top: 50px;
+    width: fit-content;
+    height: fit-content;
+}
+.contact-outer_container span{
+    color:#04edfe;
+    font-size: 40px;
+    font-weight: 700;
+    
+    
+}
+.contact-outer_container h1{
+    color:white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+   
+}
+.contact-inner_container{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    height: 80%;
+    opacity: 1;
+    animation: opac 0.9s ease forwards;
+
+}
+.input-container{
+    display:flex ;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+input{
+   margin: 4px;
+    
+    background: #151820;
+    opacity: 1;
+    animation: opac 0.9s ease forwards;
+    height: 45px; /* or any other value you prefer */
+}
+.input-with-icon {
+    position: relative;
+  }
+  
+.input-with-icon i.fa-check-circle,i.fa-times-circle  {
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 10px);
+    bottom: 0;
+    margin: auto;
+    font-size: 20px;
+    color: #04edfe;
+  }
+  
+  .input-with-icon #textarea-icon{
+    position: absolute;
+    right: 14px;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    font-size: 20px;
+   
+    color: #04edfe;
+  }
+
+  
+#input-name{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0.1s;
+}
+#input-number{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0.3s;
+}
+#input-email{
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0.1s;
+}
+#input-email_subject{
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+
+
+.form-control:focus {
+    outline: none !important;
+    
+    box-shadow: 0 0 2px 2px #04edfe;
+  }
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+    
+    width:325px;
+    
+}
+#text-areas{
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+#text-areas textarea{
+    
+    width:100%;
+    height: 250px;
+    margin-left: 5px;
+    opacity: 0;
+    box-shadow: 0 0 5px black;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0.4s;
+}
+#contact-send{
+    margin-top: 10px;
+    opacity: 0;
+    animation: zoomIn1 1s ease forwards;
+    animation-delay: 0.8s;
+
+}
+@keyframes rotateShake {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-10deg);
+    }
+    20% {
+      transform: rotate(10deg);
+    }
+    30% {
+      transform: rotate(-10deg);
+    }
+    40% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    60% {
+      transform: rotate(10deg);
+    }
+    70% {
+      transform: rotate(-10deg);
+    }
+    80% {
+      transform: rotate(10deg);
+    }
+    90% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes rotateShake1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-1deg);
+    }
+    20% {
+      transform: rotate(1deg);
+    }
+    30% {
+      transform: rotate(-1deg);
+    }
+    40% {
+      transform: rotate(1deg);
+    }
+    50% {
+      transform: rotate(-1deg);
+    }
+    60% {
+      transform: rotate(1deg);
+    }
+    70% {
+      transform: rotate(-1deg);
+    }
+    80% {
+      transform: rotate(1deg);
+    }
+    90% {
+      transform: rotate(-1deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  
+  .fa-shake {
+    animation-name: rotateShake;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+  .fa-shake1 {
+    animation-name: rotateShake1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+  
+@keyframes opac{
+    0%{
+     
+      opacity: 1;
+    }
+    100%{
+      
+      opacity: 1;
+    }
+  
+
+   }
+   @media(max-width:992px){
+    .form-group{
+      margin: 0px;
+    }
+    .contact-outer_container span{
+      font-size: 35px;
+
+    }
+    .contact-outer_container h1{
+      margin-bottom: 5px;
+      font-size: 35px;
+    }
+    .contact-outer_container{
+      
+      padding-bottom:10px;
+    }
+    #text-areas{
+      margin-top: 5px;
+      width:92%;
+      margin-left: 2px;
+      
+  }
+    }
