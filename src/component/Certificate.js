@@ -2,28 +2,28 @@ import React from 'react'
 import "./css/Certificate.css"
 import { useState, useEffect } from 'react'
 export default function Certificate(props) {
-    const [popup, set_popup] = useState(false)
+    
     const [popup1, set_popup1] = useState(false)
     const [popup2, set_popup2] = useState(false)
-    const [popup3, set_popup3] = useState(false)
+   
     const [popup4, set_popup4] = useState(false)
     const [popup5, set_popup5] = useState(false)
     const [popup6, set_popup6] = useState(false)
     const [popup7, set_popup7] = useState(false)
     const [rote, set_rote] = useState(false)
-    const [zoom, set_zoom] = useState("")
+
     useEffect(() => {
         document.querySelector(".certificate-middle-container").style.filter = popup || popup1 || popup2 || popup3 || popup4 || popup5 || popup6 || popup7 ? "blur(15px)" : "";
 
     }, [popup, popup1, popup2, popup3, popup4, popup5, popup6, popup7]);
 
     return (
-        <>
+   
             <div className="certificate-outer-most">
-                <h3 id="certificate_heading" style={{color:props.switch_modes==="dark"?"":"#484747"}}>My <span id="span2">Certificates</span></h3>
+                <ading" style={{color:props.switch_modes==="dark"?"":"#484747"}}>My <span id="span2">Certificates</span></h3>
                 <div className='certificate-middle-container'>
 
-                    <div  className="prev-certificate">
+                    <
                     <span style={{color:props.switch_modes==="dark"?"":"#484747"}} onClick={() => set_rote(false)} >&#60;</span>
                     </div>
 
@@ -33,7 +33,7 @@ export default function Certificate(props) {
 
                             <div className="front-face">
                                 <div className="certificate-inner-container" style={{ "--m": 2 }} id="certificate-1">
-                                    <img src="/all_images/AI_specialist_certificate.png" />
+                                    <images/AI_specialist_certificate.png" />
                                     <div className='certificate-layer'>
                                         <h3>AI <span>Specialist </span></h3>
                                         <i onClick={() => set_popup(popup ? false : true)} className='bx bx-link-external'></i>
@@ -122,9 +122,9 @@ export default function Certificate(props) {
                                     <img src="/all_images/IoT_certificate.png" />
                                     <div className='certificate-layer'>
                                         <h3>Summer <span>School</span></h3>
-                                        <i onClick={() => { set_popup4(popup4 ? false : true) }} className='bx bx-link-external'></i>
+                                       opup4 ? false : true) }} className='bx bx-link-external'></i>
 
-                                    </div>
+
                                 </div>
                             </div>
 
