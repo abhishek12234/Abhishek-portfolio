@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/Abhishek-portfolio/static/css/main.f393c734.css",
-    "main.js": "/Abhishek-portfolio/static/js/main.a715b914.js",
+    "main.css": "/Abhishek-portfolio/static/css/main.f5518e71.css",
+    "main.js": "/Abhishek-portfolio/static/js/main.16d2e628.js",
     "static/js/787.28cb0dcd.chunk.js": "/Abhishek-portfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/my_home_img (1).png": "/Abhishek-portfolio/static/media/my_home_img (1).42375568f4ae0a49ebc4.png",
+    "static/media/sage_logo.png": "/Abhishek-portfolio/static/media/sage_logo.992ec880482511ec07cc.png",
+    "static/media/leetcode_icon.png": "/Abhishek-portfolio/static/media/leetcode_icon.537ab72caa34f3d1037f.png",
+    "static/media/indus.png": "/Abhishek-portfolio/static/media/indus.98c14f2b1432a0581a47.png",
+    "static/media/hackerrank_icon.png": "/Abhishek-portfolio/static/media/hackerrank_icon.6a4a6e655fa272d71c3e.png",
     "index.html": "/Abhishek-portfolio/index.html",
-    "main.f393c734.css.map": "/Abhishek-portfolio/static/css/main.f393c734.css.map",
-    "main.a715b914.js.map": "/Abhishek-portfolio/static/js/main.a715b914.js.map",
+    "main.f5518e71.css.map": "/Abhishek-portfolio/static/css/main.f5518e71.css.map",
+    "main.16d2e628.js.map": "/Abhishek-portfolio/static/js/main.16d2e628.js.map",
     "787.28cb0dcd.chunk.js.map": "/Abhishek-portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f393c734.css",
-    "static/js/main.a715b914.js"
+    "static/css/main.f5518e71.css",
+    "static/js/main.16d2e628.js"
   ]
 }
